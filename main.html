@@ -13,8 +13,7 @@
 <body>
     <header>
         <div class="header">
-            <div class="logo"><a href="#"><img src="/img/logo2.png" alt="logo" class="logo"
-                        style="filter:alpha(style=2, opacity=100, finishopacity=0)"></a></div>
+            <div class="logo"><a href="#"><img src="/img/logo2.png" alt="logo" class="logo"></a></div>
             <ul class="menu">
                 <li class="aboutUs"><a href="#"> About Us</a>
                     <ul class="sub_menu">
@@ -43,9 +42,55 @@
 
                 </li>
             </ul>
-            <div class="login"><a href="#"> 로그인</a></div>
+            <div class="login"><a href="#popup"> 로그인</a>|<a href="#popup2">회원가입</a></div>
         </div>
     </header>
+    <section class="popup" id="popup">
+        <div>
+            <div class="photo">
+                <img src="/img/logo2.png" alt="">
+            </div>
+            <p class="line"></p>
+            <form action="">
+                <p class="loginLine"> 로그인</p>
+                <p> 이메일</p>
+                <input type="text" class="email">
+                <p>비빌번호</p>
+                <input type="text" class="pass">
+            </form>
+            <div class="btns">
+                <button class="loginButton"><a href="#">
+                        <p> 로그인</p>
+                    </a></button>
+                <button class="loginButton"><a href="#">
+                        <p> 취소</p>
+                    </a></button>
+            </div>
+        </div>
+    </section>
+    <section class="popup" id="popup2">
+        <div>
+            <div class="photo">
+                <img src="/img/logo2.png" alt="">
+            </div>
+            <p class="line"></p>
+            <form action="">
+                <p class="loginLine">회원가입</p>
+                <p> 이메일</p>
+                <input type="text" class="email">
+                <p>비빌번호</p>
+                <input type="text" class="pass">
+            </form>
+            <div class="btns">
+                <button class="loginButton"><a href="#">
+                        <p> 확인</p>
+                    </a></button>
+                <button class="loginButton"><a href="#">
+                        <p> 취소</p>
+                    </a></button>
+            </div>
+        </div>
+    </section>
     <div class="content">
         <div class="slide">
             <ul>
