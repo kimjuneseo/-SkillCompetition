@@ -4,7 +4,7 @@ img{vertical-align: middle;}
 
 
 /* header */
-.login{margin:20 20 0 0px; }
+.login{margin-top: 20px; }
 .logo{float: left;}
 header{z-index: 0;}
 .header {display: flex; justify-content: space-around; left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 20%; position: fixed; text-align: center;}
