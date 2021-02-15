@@ -1,5 +1,5 @@
 function slide() {
-    var pos = 0;
+    let pos = 0;
     function play() {
         pos = (pos + 1) % 3
         $('.slide ul')
@@ -13,3 +13,12 @@ function slide() {
 
 $(document)
     .on('ready', slide)
+
+window.onload = function () {
+    const cancel = document.querySelector('.cancel');
+
+    cancel.addEventListener('click', function (e) {
+        document.querySelector('.email').value = '';
+        document.querySelector('.pass').value = '';
+    });
+};

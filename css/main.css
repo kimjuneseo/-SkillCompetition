@@ -4,7 +4,7 @@ img{vertical-align: middle;}
 
 
 /* header */
-.login{margin-top: 20px; }
+.login{margin:20 20 0 0px; }
 .logo{float: left;}
 header{z-index: 0;}
 .header {display: flex; justify-content: space-around; left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 20%; position: fixed; text-align: center;}
@@ -17,7 +17,7 @@ header{z-index: 0;}
 /* popup */
 .popup:target{display: block;}
 .popup{position: fixed; top: 0; left: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, 0.8); display: none;}
-.popup>div{background: rgba(255, 255, 255, 1); margin: -100px auto; z-index: 10; width: 250px; height: 350px; position: fixed; top: 40%; bottom: 0; left: 0; right: 0; }
+.popup>div{background: rgba(255, 255, 255, 1); margin: -100px auto; z-index: 10; width: 250px; height: 300px; position: fixed; top: 40%; bottom: 0; left: 0; right: 0; }
 .popup form{margin: 0 auto;}
 .popup input{width: 200px; height: 20px; border: 1px solid black; border-radius: 3px; padding: 5px 12px; margin: 0 10px;}
 .popup input:nth-child(2){margin-top: 30px;}
@@ -27,8 +27,10 @@ header{z-index: 0;}
 .popup img{width: 100%;}
 .popup .line{width: 100%; margin-top: 10px; border: 1px solid rgba(0, 0, 0, 0.7);}
 .popup .loginLine{margin-bottom: 20px; margin-top: 10px;}
-.popup .loginButton{background: rgba(17, 78, 128, 0.507); border: 0.5px solid green; width: 150px; height: 25px; border-radius: 2px; margin: 3px auto;}
+.popup .loginButton,.cancel,.signUp{background: rgba(17, 78, 128, 0.507); border: 0.5px solid green; width: 150px; height: 25px; border-radius: 2px; margin: 3px auto;}
 .popup .loginButton p{color: #fff;}
+.popup .cancel p{color: #fff;}
+.popup .signUp p{color: #fff;}
 
 .popup .btns{display: flex; flex-direction: column;}
 
