@@ -15,9 +15,9 @@
         <div class="header">
             <div class="logo"><a href="#"><img src="/img/logo2.png" alt="logo" class="logo"></a></div>
             <ul class="menu">
-                <li class="aboutUs"><a href="#"> About Us</a>
+                <li class="aboutUs"><a href="/aboutUs.html"> About Us</a>
                     <ul class="sub_menu">
-                        <li><a href="#"></a>언택트라이프 소개</a></li>
+                        <li><a href="./aboutUs.html">언택트라이프 소개</a></li>
                     </ul>
                 </li>
                 <li class="event"><a href="#"> 이벤트</a>
@@ -46,7 +46,7 @@
         </div>
     </header>
     <section class="popup" id="popup">
-        <div>
+        <div class="popupDiv">
             <div class="photo">
                 <img src="/img/logo2.png" alt="">
             </div>
@@ -73,25 +73,27 @@
         </div>
     </section>
     <section class="popup" id="popup2">
-        <div>
-            <div class="photo">
-                <img src="/img/logo2.png" alt="">
-            </div>
-            <p class="line"></p>
-            <form action="">
-                <p class="loginLine">회원가입</p>
-                <p> 이메일</p>
-                <input type="text" class="email">
-                <p>비빌번호</p>
-                <input type="text" class="pass">
-            </form>
-            <div class="btns">
-                <button class="loginButton"><a href="#">
-                        <p> 확인</p>
-                    </a></button>
-                <button class="cancel"><a href="#">
-                        <p> 취소</p>
-                    </a></button>
+        <div class="popupDiv">
+            <div>
+                <div class="photo">
+                    <img src="/img/logo2.png" alt="">
+                </div>
+                <p class="line"></p>
+                <form action="">
+                    <p class="loginLine">회원가입</p>
+                    <p> 이메일</p>
+                    <input type="text" class="email">
+                    <p>비빌번호</p>
+                    <input type="text" class="pass">
+                </form>
+                <div class="btns">
+                    <button class="loginButton"><a href="#">
+                            <p> 확인</p>
+                        </a></button>
+                    <button class="cancel"><a href="#">
+                            <p> 취소</p>
+                        </a></button>
+                </div>
             </div>
         </div>
     </section>
@@ -102,6 +104,12 @@
                 <li></li>
                 <li></li>
             </ul>
+        </div>
+        <div class="btns">
+            <button class="slideCansle">stop</button>
+            <button class="slideGo">go</button>
+            <button class="next">&#10094;</button>
+            <button class="backWards">&#10095;</button>
         </div>
         <div class="side_content">
             <p>new event</p>
