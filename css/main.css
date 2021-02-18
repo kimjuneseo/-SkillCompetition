@@ -6,13 +6,12 @@ img{vertical-align: middle;}
 /* header */
 .login{margin:20 20 0 0px; }
 .logo{float: left;}
-header{z-index: 0;}
 .header {display: flex; justify-content: space-around; left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 20%; position: fixed; text-align: center;}
 .menu{margin-top: 100px;}
 .menu>li {width: 150px; float: left; height: 50px; border-top: 1px solid black;}
+.menu>li:hover .sub_menu>li {height: 30px;border-bottom: 1px solid black;text-decoration: double;}
 .sub_menu>li {height: 0px; transition: .3s; overflow: hidden;}
 .sub_menu2>li {height: 0px;}
-.menu>li:hover .sub_menu>li {height: 30px;border-bottom: 1px solid black;text-decoration: double;}
 
 /* popup */
 .popup:target{display: block;}
@@ -38,7 +37,7 @@ header{z-index: 0;}
 .content{width: 1200px; height: 300px; margin: auto;margin-top: 200px; z-index: 0;}
 /* slide */
 .slide{width: 100%; height: 300px; overflow: hidden; float: right;}
-.slide li{height: 300px; transition: 0.4;}
+.slide li{height: 300px;}
 .slide li:nth-child(1){background-image: url(/img/silde1.png);}
 .slide li:nth-child(2){background-image: url(/img/silde2.jpg);}
 .slide li:nth-child(3){background-image: url(/img/silde3.jpg);}
@@ -62,4 +61,4 @@ header{z-index: 0;}
 .comments p{font-weight: bold; border-top: 1px solid black; text-align: right;}
 .comments>li{margin-top: 20px;}
 /* footer */
-footer{border-top: 1px solid black; width:100%; height:60px; position:absolute; bottom:0; text-align: center; color: white;}
+footer{border-top: 1px solid black; width:100%; height:60px; position:absolute; bottom:0; text-align: center; color: white;}       

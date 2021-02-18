@@ -22,24 +22,25 @@ window.onload = function () {
             return
         }
         count = 0
-        function stop() {
-            clearInterval(set)
-        }
-
-        function go() {
-            setInterval(slide, 1500)
-        }
-        function next() {
-            count++
-        }
-        function backWards() {
-            count--
-        }
-        slideCansl.addEventListener('click', stop)
-        slideGo.addEventListener('click', go)
-        nextBtn.addEventListener('click', next)
-        backBtn.addEventListener('click', backWards)
     }
     let set = setInterval(slide, 1500)
+
+    function stop() {
+        clearInterval(set)
+    }
+
+    function go() {
+        setInterval(slide, 1500)
+    }
+    function next() {
+        count++
+    }
+    function backWards() {
+        count--
+    }
+    slideCansl.addEventListener('click', stop)
+    slideGo.addEventListener('click', go)
+    nextBtn.addEventListener('click', next)
+    backBtn.addEventListener('click', backWards)
 
 };
