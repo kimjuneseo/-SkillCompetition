@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/event.css">
-    <!-- <script src="/js/eventList.js"></script> -->
+    <link rel="stylesheet" href="./css/eventManagement.css">
+    <script src="./js/eventManagement.js"></script>
 </head>
+
 <body>
     <header>
         <div class="header">
@@ -51,25 +53,30 @@
             </ul>
         </div>
     </header>
-    <section>
-        <div>
-            <video controls src="./video/video1 (1).mp4">
+ 
+    <div class="imgPreview">
+        <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);">
+        <div class="imageContainer"></div>
+    </div>
+<section>
+        <div class="videoContnet">
+            <video class="video" controls src="./video/video1 (1).mp4">
             </video>
-            <div>
-                <a href=#none id="show" onclick="if(hide.style.display=='none')
-                {hide.style.display='';show.innerText='▲접기'}
-                else {hide.style.display='none';show.innerText='▶펼치기'}">▶더 보기</a>
-                <div id="hide" style="display: none">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt beatae ratione fuga alias officiis repudiandae molestiae reiciendis? Officiis facilis molestiae laboriosam possimus voluptate ipsum libero, harum assumenda ipsa impedit!
-                    Illo minima ab nostrum veritatis. Quae, dignissimos cumque nisi, ullam ducimus inventore nemo esse ad ab dicta sunt repellat, magni aliquid saepe minus laudantium autem quam error consequatur quia odit.
-                    Magni omnis repudiandae reiciendis. Minus voluptatum aut temporibus voluptates maxime cum ex est officia. Facere dolorum beatae ratione vitae cum perferendis nulla qui eum animi id, incidunt corporis vel blanditiis?
-                </div>
-                </div>
-            <form action="">
-                <textarea></textarea>
-                <input type="submit" value="전송">
-            </form>
-            <button><a href="./eventManagement.html">수정</a></button>
+            <div class="textBox">
+                <textarea>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt beatae ratione fuga alias
+                    officiis repudiandae molestiae reiciendis? Officiis facilis molestiae laboriosam possimus voluptate
+                    ipsum libero, harum assumenda ipsa impedit!
+                    Illo minima ab nostrum veritatis. Quae, dignissimos cumque nisi, ullam ducimus inventore nemo esse
+                    ad ab dicta sunt repellat, magni aliquid saepe minus laudantium autem quam error consequatur quia
+                    odit.
+                    Magni omnis repudiandae reiciendis. Minus voluptatum aut temporibus voluptates maxime cum ex est
+                    officia. Facere dolorum beatae ratione vitae cum perferendis nulla qui eum animi id, incidunt
+                    corporis vel blanditiis?
+                </p>
+                </textarea>
+                <button>수정</button>
+            </div>
         </div>
     </section>
     <footer>
@@ -81,4 +88,5 @@
         </div>
     </footer>
 </body>
+
 </html>
